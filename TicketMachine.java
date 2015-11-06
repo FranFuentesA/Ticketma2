@@ -98,18 +98,28 @@ public class TicketMachine
      */
     public int refundBalance()
     {
+        
         int amountToRefund;
         amountToRefund = balance;
         balance = 0;
         return amountToRefund;
     }
+   
     
     public int emptyMachine()
     {
+       if (balance == 0) {
         int vaciaMaquina;
         vaciaMaquina = total;
         total = 0;
         return vaciaMaquina;
-   
+    } 
+    else {
+            int vaciaMaquina;
+            vaciaMaquina = -1;
+            return vaciaMaquina;
+            
     }
+   
+}
 }
